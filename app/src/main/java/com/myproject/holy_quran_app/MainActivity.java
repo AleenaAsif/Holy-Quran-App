@@ -277,17 +277,17 @@ public class MainActivity extends AppCompatActivity {
                 String f = arrayList.get(position);
 
 
-                Intent intent = new Intent(MainActivity.this , MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 //Toast.makeText(MainActivity.this, f, Toast.LENGTH_SHORT).show();
-                intent.putExtra("surat" , f);
-                intent.putExtra("ayatStart" , SSP[position]);
-                intent.putExtra("ayatEnd" , (SSP[position + 1]  ) );
+                intent.putExtra("surat", f);
+                intent.putExtra("ayatStart", SSP[position]);
+                intent.putExtra("ayatEnd", (SSP[position + 1]));
                 startActivity(intent);
             }
-        });
+        });
 
 
 
 
-    }
+}
 }

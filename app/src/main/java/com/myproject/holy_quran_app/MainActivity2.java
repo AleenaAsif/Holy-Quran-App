@@ -1,5 +1,4 @@
-package com.example.quranapplication;
-
+package com.example.holyquran;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +11,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.myproject.holy_quran_app.MainActivity3;
+import com.myproject.holy_quran_app.R;
 
 import java.util.ArrayList;
 
@@ -6386,8 +6388,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView2 = findViewById(R.id.listView2);
-        editTextText = findViewById(R.id.editTextText);
+        listView2 = findViewById(R.id.scrollView);
+        editTextText = findViewById(R.id.result_text_view);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -6417,7 +6419,7 @@ public class MainActivity2 extends AppCompatActivity {
             });
         }
 
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.find_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String verseNumberString = editTextText.getText().toString().trim();
