@@ -1,6 +1,5 @@
 package com.myproject.holy_quran_app;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
